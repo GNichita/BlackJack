@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="BLACKJACK:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BLACKJACK_jar</output-path>
+    <root id="archive" name="BLACKJACK.jar">
+      <element id="module-output" name="BLACKJACK" />
+    </root>
+  </artifact>
+</component>
