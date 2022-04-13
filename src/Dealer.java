@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Dealer extends Player{
+public class Dealer {
 
     private DeckFactory deckFactory;
 

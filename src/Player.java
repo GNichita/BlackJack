@@ -17,8 +17,6 @@ public class Player {
         this.money = money;
     }
 
-    public Player() {}
-
     public void betDouble(){
         bet=(bet*2);
     }
