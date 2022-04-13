@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Player {
 
-    protected String name;
-    protected ArrayList<Card> hand;
-    protected int handValue;
+    private String name;
+    private ArrayList<Card> hand;
+    private int handValue;
 
-    protected double bet;
-    protected double money;
+    private double bet;
+    private double money;
 
     public Player(String name, int handValue, double bet, double money) {
         this.name = name;
