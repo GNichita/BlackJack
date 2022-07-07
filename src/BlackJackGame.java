@@ -86,21 +86,46 @@ public class BlackJackGame {
     }
 
     public void playerDouble() {
+
         if (!playerBlackJackFlag) {
             playerGoDoubleFlag = false;
-            System.out.println("Do you wont to double? "+ soutGreenColor("(y/n)"));
-            if (scanNext("y")) {
+            System.out.println("Do you wont to double? " + soutGreenColor("(y/n)"));
+
+
+            /*if (scanNext("y")) {
                 playerGoDoubleFlag = true;
                 player.betDouble();
-                System.out.println("Thx , your total bet is: " + soutGreenColor(""+player.getBet()));
+                System.out.println("Thx , your total bet is: " + soutGreenColor("" + player.getBet()));
                 player.hit(dealer);
-                System.out.print(playerPurpleColored()+"'s cards: ");
+                System.out.print(playerPurpleColored() + "'s cards: ");
                 player.printHand();
                 System.out.println();
                 System.out.println();
+            }*/
+            switch (scan.next().toLowerCase()){
+                case  ("y"):
+                    playerGoDoubleFlag = true;
+                    player.betDouble();
+                    System.out.println("Thx , your total bet is: " + soutGreenColor("" + player.getBet()));
+                    player.hit(dealer);
+                    System.out.print(playerPurpleColored() + "'s cards: ");
+                    player.printHand();
+                    System.out.println();
+                    System.out.println();
+                    break;
+                case ("n"):
+                    break;
+                default:
+                    System.out.println("Wrong command!");
+                    playerDouble();
+                    break;
+
             }
+
+                }
+
         }
-    }
+
 
     public void playerHitOrStand() {
         playerBustedFlag = false;
